@@ -1,5 +1,5 @@
 import os
-with open('2021/input/day1.txt') as f:
+with open('2021/input/day01.txt') as f:
     lines = list(map(int, f.readlines()))
 
 # part1
