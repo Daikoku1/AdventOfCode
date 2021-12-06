@@ -1,5 +1,6 @@
 import os
-with open('2021/input/day02.txt') as f:
+path = os.path.join(os.getcwd(), 'input', 'day02.txt')
+with open(path) as f:
     lines = list(map(lambda x : x.strip(), f.readlines()))
 
 # Part1
@@ -11,7 +12,7 @@ for l in lines:
     elif c == 'down' : y += n
     else: x += n
 print(x*y)
-
+print('-'*30)
 
 # Part1
 x, y, aim = 0, 0, 0

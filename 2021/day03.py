@@ -1,5 +1,7 @@
+import os
 from collections import Counter
-with open('2021/input/day03.txt') as f:
+path = os.path.join(os.getcwd(), 'input', 'day03.txt')
+with open(path) as f:
     lines = list(map(lambda x : x.strip(), f.readlines()))
 
 T = len(lines) // 2
@@ -18,7 +20,7 @@ def solution1(lines, T):
     return int(gamma, 2) * int(epsilon, 2)
 
 print(solution1(lines, T))
-print('----------------')
+print('-'*30)
 
 
 # Part2

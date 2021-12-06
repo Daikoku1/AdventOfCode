@@ -1,10 +1,11 @@
 import os
-with open('2021/input/day01.txt') as f:
+path = os.path.join(os.getcwd(), 'input', 'day01.txt')
+with open(path) as f:
     lines = list(map(int, f.readlines()))
 
 # part1
 print(sum([i < j for i, j in zip(lines[:-1], lines[1:])]))
-
+print('-'*30)
 
 # part2
 three_sums = [sum(lines[i:i+3]) for i in range(len(lines) - 2)]

@@ -1,4 +1,6 @@
-with open('2021/input/day05.txt') as f:
+import os
+path = os.path.join(os.getcwd(), 'input', 'day05.txt')
+with open(path) as f:
     lines = list(map(lambda x : x.strip(), f.readlines()))
 
 # part1
@@ -22,7 +24,7 @@ for l in lines:
                 dic[(i, y1)] += 1
             else: dic[(i, y1)] = 1
 print(ans)
-print('----------------')
+print('-'*30)
 
 
 # part2

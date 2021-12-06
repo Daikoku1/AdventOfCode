@@ -1,5 +1,6 @@
-import copy
-with open('2021/input/day04.txt') as f:
+import copy, os
+path = os.path.join(os.getcwd(), 'input', 'day04.txt')
+with open(path) as f:
     lines = list(map(lambda x : x.strip(), f.readlines()))
 
 cmd = list(map(int, lines[0].split(',')))
@@ -31,7 +32,9 @@ while not end:
             break
     t_idx += 1
 
-print('------------------------------')
+print('-'*30)
+
+
 # Part2
 max_idx = 0
 answer = 0
