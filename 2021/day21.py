@@ -3,7 +3,6 @@ from itertools import product
 from collections import Counter, defaultdict
 path = Path.cwd() / 'input' / 'day21.txt'
 data = open(path).read().strip().split('\n')
-print(data)
 p1, p2 = int(data[0].split(':')[1]), int(data[1].split(':')[1])
 
 # # test
